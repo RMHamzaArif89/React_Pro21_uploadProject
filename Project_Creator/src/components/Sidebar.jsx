@@ -2,7 +2,7 @@ import React from 'react'
 import { MdAssignmentAdd } from "react-icons/md";
 import './css/sidebar.css'
 
-function Sidebar({setState,formData}) {
+function Sidebar({setState,formData,proDetail}) {
   return (
     <div className='sidebar'>
         <h1>Your Projects</h1>
@@ -15,7 +15,7 @@ function Sidebar({setState,formData}) {
         {
             formData.map((val)=>{
            return(
-            <div className="side-projects">
+            <div className="side-projects" onClick={()=>{proDetail(val)}}>
             {val.name}
          </div>
            )
