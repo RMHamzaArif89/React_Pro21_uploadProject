@@ -1,0 +1,31 @@
+.projects{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(221, 195, 244);
+    gap: 2rem;
+}
+.name{
+    font-size: 1.5rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+
+
+}
+.description{
+    font-size: 1.2rem;
+    color: gray;
+    font-family: serif;
+
+}
+.date{
+    font-size: 1.3rem;
+    color: darkblue;
+    font-family:sans-serif;
+
+}
