@@ -21,11 +21,11 @@ let setDataFunc=(data)=>{
   return (
   <>
 <div className="container">
-<Sidebar setState={(v)=>{setState(v)}}/>
+<Sidebar setState={(v)=>{setState(v)}} formData={formData}/>
 {
   state? <ProjectForm state={(e)=>{setState(e)}} formData={(v)=>{setDataFunc(v)}}/> 
   :(formData.length > 0?
-   <Projects formData={formData}/> : <Blank/>)
+   <Projects formData={formData}/> : <Blank  setState={(e)=>{setState(e)}}/>)
 }
  
 </div>
