@@ -2,11 +2,11 @@ import React from 'react'
 import { MdAssignmentAdd } from "react-icons/md";
 import './css/sidebar.css'
 
-function Sidebar() {
+function Sidebar({setState}) {
   return (
     <div className='sidebar'>
         <h1>Your Projects</h1>
-        <button className="addProject">
+        <button className="addProject" onClick={()=>{setState(true)}}>
             Add Projects <MdAssignmentAdd/>
         </button>
       

@@ -1,0 +1,55 @@
+.form{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    font-family: serif;
+    margin: 1.5rem 0;
+}
+
+.form label{
+    font-size: 1.3rem;
+    color: black;
+    font-family: serif;
+    width: 60%;
+    text-align: left;
+
+}
+.form input{
+    width: 60%;
+    height: 40px;
+    background: lightcyan;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: black;
+    font-family: sans-serif;
+    margin: 0.5rem 0;
+    padding: 0 3px;
+
+}
+
+.form .add{
+    font-size: 1.3rem;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: red;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1.5rem 0;
+}
+.add:hover{
+    background: lightblue;
+    color: black;
+    cursor: pointer;
+}
