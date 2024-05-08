@@ -51,3 +51,14 @@ span{
     font-family:sans-serif;
 
 }
+
+
+.delete{
+    font-size: 1.3rem;
+    color:black;
+
+}
+.delete:hover{
+    color: red;
+    cursor: pointer;
+}

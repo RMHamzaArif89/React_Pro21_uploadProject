@@ -18,6 +18,20 @@ let setDataFunc=(data)=>{
 }
 
 
+
+let Delete=(e)=>{
+  
+setFormData(()=>(
+
+  
+    formData.filter((data)=>(data.name !== e))
+  
+))
+  
+
+}
+
+
   return (
   <>
 <div className="container">
@@ -25,7 +39,7 @@ let setDataFunc=(data)=>{
 {
   state? <ProjectForm state={(e)=>{setState(e)}} formData={(v)=>{setDataFunc(v)}}/> 
   :(formData.length > 0?
-   <Projects formData={formData}/> : <Blank  setState={(e)=>{setState(e)}}/>)
+   <Projects formData={formData} Delete={(e)=>{Delete(e)}}/> : <Blank  setState={(e)=>{setState(e)}}/>)
 }
  
 </div>
